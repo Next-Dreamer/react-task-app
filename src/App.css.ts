@@ -12,7 +12,7 @@ export const vars =createGlobalTheme(":root", {
         brightText: "rgb(255,255,255)",
         darkText: "rgb(24,42,770)",
         secondaryDarkText: "rgb(94,108,132)",
-        secondaryDarkTexthover: "rgb(218,219,226)",
+        secondaryDarkTextHover: "rgb(218,219,226)",
         selectedTab: "rgb(137,176,174)",
         updateButton: "rgb(237,180,88)",
         deletebutton: "rgb(237,51,88)",
@@ -37,7 +37,7 @@ export const vars =createGlobalTheme(":root", {
     shadow: {
         basic: "4px 4px 8px 0px rgba(34, 60, 80, 0.2)"
     },
-    minwidth: {
+    minWidth: {
         list: '250px'
     }
 })
