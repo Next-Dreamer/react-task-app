@@ -15,7 +15,7 @@ export const vars =createGlobalTheme(":root", {
         secondaryDarkTextHover: "rgb(218,219,226)",
         selectedTab: "rgb(137,176,174)",
         updateButton: "rgb(237,180,88)",
-        deletebutton: "rgb(237,51,88)",
+        deleteButton: "rgb(237,51,88)",
     },
     fontSizing: {
         T1: "32px",
@@ -59,4 +59,41 @@ export const board = style({
 export const buttons = style({
     marginTop: 'auto',
     paddingLeft: vars.spacing.big2
+})
+
+export const deleteBoardButton = style({
+    border: "none",
+    borderRadius: 5,
+    width: "max-content",
+    marginTop: "auto",
+    marginLeft: "auto",
+    marginBottom: 30,
+    fontSize: vars.fontSizing.T4,
+    padding: vars.spacing.big2,
+    backgroundColor: vars.color.mainFaded,
+    cursor: "pointer",
+    opacity: 0.6,
+    minWidth: 150,
+    ":hover": {
+        opacity: 0.8,
+    }
+})
+
+export const loggerButton = style({
+    border: "none",
+    borderRadius: 5,
+    width: "max-content",
+    marginTop: "auto",
+    marginLeft: "15px",
+    marginRight: "30px",
+    marginBottom: "30px",
+    fontSize: vars.fontSizing.T4,
+    padding: vars.spacing.big2,
+    backgroundColor: vars.color.mainFaded,
+    cursor: "pointer",
+    opacity: 0.6,
+    minWidth: 150,
+    ":hover": {
+        opacity: 0.8,
+    }
 })

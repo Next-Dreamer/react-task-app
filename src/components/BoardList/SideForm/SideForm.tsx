@@ -16,10 +16,11 @@ const SideForm: FC<TSideFormProps> = ({ setIsFormOpen }) => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputText(e.target.value);
-  }
+  };
+
   const handleOnBlur = () => {
     setIsFormOpen(false);
-  }
+  };
 
   const handleClick = () => {
     if (inputText.length > 0) {
@@ -31,11 +32,11 @@ const SideForm: FC<TSideFormProps> = ({ setIsFormOpen }) => {
             lists: []
           },
         })
-      )
+      );
       dispatch(
         addLog({
           logId: uuidv4(),
-          logMessage: inputText,
+          logMessage: `게시판 등록 : ${inputText}`,
           logAuthor: "user",
           logTimestamp: String(Date.now())
         })

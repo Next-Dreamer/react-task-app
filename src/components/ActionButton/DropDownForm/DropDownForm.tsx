@@ -30,8 +30,8 @@ const DropDownForm = ({
   const [text, setText] = useState("");
   const formPlaceholder = list
     ? "리스트의 제목을 입력하세요"
-    : "태스크 이름을 입력하세요";
-  const buttonTitle = list ? "리스트 추가하기" : "태스크 추가하기";
+    : "일 이름을 입력하세요";
+  const buttonTitle = list ? "리스트 추가하기" : "일 추가하기";
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setText(e.target.value);
   };
@@ -69,7 +69,7 @@ const DropDownForm = ({
       dispatch(
         addLog({
           logId: uuidv4(),
-          logMessage: `태스크 생성하기: ${text}`,
+          logMessage: `일 생성하기: ${text}`,
           logAuthor: "user",
           logTimestamp: String(Date.now()),
         })
