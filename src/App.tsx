@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./App.css";
 import { appContainer, board, buttons, deleteBoardButton, loggerButton } from './App.css';
 import BoardList from "./components/BoardList/BoardList";

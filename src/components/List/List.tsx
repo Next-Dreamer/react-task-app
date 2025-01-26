@@ -1,4 +1,3 @@
-import React from 'react'
 import { GrSubtract } from "react-icons/gr";
 import { IList, ITask } from "../../types";
 import Task from "../Task/Task";
@@ -36,6 +35,7 @@ const List = ({ list, boardId }: TListProps) => {
     taskId: string,
     task: ITask
   ) => {
+    console.log(taskId);
     dispatch(setModalData({ boardId, listId, task }));
     dispatch(setModalActive(true));
   }

@@ -60,7 +60,7 @@ const BoardList: FC<TBoardListProps> = ({
       inputRef.current?.focus();
     }, 0);
   };
-
+  
   const handleSignOut = () => {
     signOut(auth)
     .then(() => {
